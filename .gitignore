@@ -5,4 +5,6 @@ node_modules/
 # internal working docs -- never publish
 .claude/
 docs/2026-06-14-content-verification-scope.md
+docs/2026-06-14-dns-flip-scope.md
+docs/dns-snapshot-*
 docs/source-minutes-links.md
