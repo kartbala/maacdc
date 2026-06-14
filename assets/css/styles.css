@@ -318,7 +318,8 @@ table.data caption { text-align: left; padding: 1rem 1.25rem; font-weight: 700; 
 table.data th, table.data td { padding: .85rem 1.1rem; text-align: left; border-bottom: 1px solid var(--navy-line); vertical-align: top; }
 table.data thead th { background: var(--navy); color: #fff; font-size: var(--step--1); letter-spacing: .02em; }
 table.data tbody tr:nth-child(even) { background: var(--navy-tint); }
-table.data th[scope="row"] { color: var(--navy); }
+table.data th[scope="row"] { color: var(--navy); white-space: nowrap; }
+table.data td:last-child { white-space: nowrap; }
 
 /* letter / list items */
 .doc-list { list-style: none; padding: 0; display: grid; gap: 1rem; }
