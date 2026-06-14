@@ -1,3 +1,8 @@
 node_modules/
 .DS_Store
 *.log
+
+# internal working docs -- never publish
+.claude/
+docs/2026-06-14-content-verification-scope.md
+docs/source-minutes-links.md
