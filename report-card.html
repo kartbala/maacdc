@@ -8,7 +8,7 @@
 <link rel="icon" href="assets/img/maac-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -23,10 +23,10 @@
     <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav"><span class="nav-toggle__label">Menu</span></button>
     <nav class="primary-nav" id="primary-nav" aria-label="Primary">
       <ul>
-        <li><a href="index.html">Home</a></li>
         <li><a href="who-we-are.html">Who We Are</a></li>
         <li><a href="what-we-do.html">What We Do</a></li>
         <li><a href="report-card.html" aria-current="page">Report Card</a></li>
+        <li><a class="ext" href="https://dangerousdc.org" target="_blank" rel="noopener noreferrer">DangerousDC<span class="visually-hidden"> (opens in a new tab)</span></a></li>
         <li><a href="meetings.html">Meetings</a></li>
         <li><a href="minutes.html">Minutes</a></li>
         <li><a href="updates.html">Updates</a></li>
@@ -55,13 +55,31 @@
     <div class="container">
       <p class="section__eyebrow">The five metrics</p>
       <h2 class="section__title display">What we grade</h2>
-      <div class="grid grid--2" style="margin-top:2rem;">
-        <div class="card"><span class="card__num">01</span><h3>Accessible Pedestrian Signals</h3><p>The percent of intersections equipped with Accessible Pedestrian Signals (APS) &mdash; the audible and tactile cues that let blind and low-vision pedestrians cross safely.</p></div>
-        <div class="card"><span class="card__num">02</span><h3>Sightline-law compliance</h3><p>The percent of intersections that comply with DC sightline (daylighting) laws &mdash; keeping corners clear so drivers and pedestrians can see each other.</p></div>
-        <div class="card"><span class="card__num">03</span><h3>Safe design speeds</h3><p>The percent of High Injury Network miles engineered for a design speed of 20 mph or less &mdash; the threshold below which crashes are far more survivable.</p></div>
-        <div class="card"><span class="card__num">04</span><h3>No permissive left turns</h3><p>The percent of intersections that prohibit permissive left turns &mdash; a leading cause of pedestrian crashes at signalized crossings.</p></div>
-        <div class="card"><span class="card__num">05</span><h3>Evacuation-route bus lanes</h3><p>The percent of emergency evacuation route miles with 24/7 bus lanes &mdash; so transit-dependent residents can actually get out in a crisis.</p></div>
-        <div class="card" style="background:var(--navy); color:#fff; border-color:var(--navy);"><span class="card__num" style="color:var(--star);">&#9733;</span><h3 style="color:#fff;">Why these five</h3><p style="color:#dbe2f7;">Each is concrete, countable, and squarely within the District&rsquo;s power to change. Together they describe a city that works for people who don&rsquo;t &mdash; or can&rsquo;t &mdash; drive.</p></div>
+      <div class="scorecard">
+        <div class="scorecard__row">
+          <span class="scorecard__no" aria-hidden="true"></span>
+          <div class="scorecard__body"><h3>Accessible Pedestrian Signals</h3><p>The percent of intersections equipped with Accessible Pedestrian Signals (APS) &mdash; the audible and tactile cues that let blind and low-vision pedestrians cross safely.</p></div>
+        </div>
+        <div class="scorecard__row">
+          <span class="scorecard__no" aria-hidden="true"></span>
+          <div class="scorecard__body"><h3>Sightline-law compliance</h3><p>The percent of intersections that comply with DC sightline (daylighting) laws &mdash; keeping corners clear so drivers and pedestrians can see each other.</p></div>
+        </div>
+        <div class="scorecard__row">
+          <span class="scorecard__no" aria-hidden="true"></span>
+          <div class="scorecard__body"><h3>Safe design speeds</h3><p>The percent of High Injury Network miles engineered for a design speed of 20 mph or less &mdash; the threshold below which crashes are far more survivable.</p></div>
+        </div>
+        <div class="scorecard__row">
+          <span class="scorecard__no" aria-hidden="true"></span>
+          <div class="scorecard__body"><h3>No permissive left turns</h3><p>The percent of intersections that prohibit permissive left turns &mdash; a leading cause of pedestrian crashes at signalized crossings.</p></div>
+        </div>
+        <div class="scorecard__row">
+          <span class="scorecard__no" aria-hidden="true"></span>
+          <div class="scorecard__body"><h3>Evacuation-route bus lanes</h3><p>The percent of emergency evacuation route miles with 24/7 bus lanes &mdash; so transit-dependent residents can actually get out in a crisis.</p></div>
+        </div>
+        <div class="scorecard__row scorecard__why">
+          <span class="scorecard__no star" aria-hidden="true">&#9733;</span>
+          <div class="scorecard__body"><h3>Why these five</h3><p>Each is concrete, countable, and squarely within the District&rsquo;s power to change. Together they describe a city that works for people who don&rsquo;t &mdash; or can&rsquo;t &mdash; drive.</p></div>
+        </div>
       </div>
     </div>
   </section>
@@ -104,6 +122,7 @@
         <li><a href="who-we-are.html">Who We Are</a></li>
         <li><a href="what-we-do.html">What We Do</a></li>
         <li><a href="report-card.html">Report Card</a></li>
+        <li><a class="ext" href="https://dangerousdc.org" target="_blank" rel="noopener noreferrer">DangerousDC<span class="visually-hidden"> (opens in a new tab)</span></a></li>
         <li><a href="meetings.html">Meetings</a></li>
         <li><a href="minutes.html">Minutes</a></li>
         <li><a href="updates.html">Updates</a></li>
