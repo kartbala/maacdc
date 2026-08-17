@@ -1,0 +1,217 @@
+\documentclass[11pt]{article}
+
+% ---- MAAC comment letter: RFK Campus Master Plan public comment draft ----
+% Typeset in Atkinson Hyperlegible (Braille Institute) for low-vision readability.
+% Compile: lualatex (twice)
+
+\usepackage[letterpaper,top=0.7in,bottom=0.8in,left=0.9in,right=0.9in,footskip=0.35in]{geometry}
+\usepackage[sfdefault]{atkinson}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{needspace}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{maacnavy}{HTML}{102D7B}
+\definecolor{maacred}{HTML}{CF142B}
+\definecolor{inkbody}{HTML}{15181F}
+\definecolor{rulegrey}{HTML}{C9CEDC}
+
+\color{inkbody}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\linespread{1.06}
+\setlength{\emergencystretch}{3em}
+
+\hypersetup{
+  pdftitle={Comment of the MAAC Chair on the RFK Campus Master Plan Public Comment Draft},
+  pdfauthor={Karthik Balasubramanian, Chair, Multimodal Accessibility Advisory Council},
+  pdflang={en-US}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{rulegrey}\leaders\hrule height \footrulewidth\hfill}}
+\fancyfoot[L]{\footnotesize\color{maacnavy}Multimodal Accessibility Advisory Council\quad\textbar\quad maacdc.org\quad\textbar\quad info@maacdc.org}
+\fancyfoot[R]{\footnotesize\color{maacnavy}\thepage}
+
+% \Needspace keeps a heading, its rule, and the first lines of its body together
+% -- without it a heading can strand at the foot of a page and break from its rule.
+\newcommand{\heading}[1]{\Needspace*{5\baselineskip}\vspace{3mm}{\color{maacnavy}\bfseries\large #1\par}\vspace{-3pt}{\color{rulegrey}\hrule height 0.8pt}\vspace{1mm}\nopagebreak}
+
+\begin{document}
+
+% ================= MASTHEAD =================
+\thispagestyle{fancy}
+\noindent
+\begin{minipage}[b]{0.62\linewidth}
+  \includegraphics[height=15mm]{../img/maac-logo.png}
+\end{minipage}%
+\begin{minipage}[b]{0.38\linewidth}
+  \raggedleft\footnotesize\color{maacnavy}
+  Established under D.C. Official Code\\
+  \S\,50--2361.31\\
+  \href{https://maacdc.org}{maacdc.org}
+\end{minipage}
+
+\vspace{4mm}
+{\color{maacnavy}\hrule height 2.2pt}
+\vspace{1.5pt}
+{\color{maacred}\hrule height 1pt}
+
+\vspace{5mm}
+
+August 13, 2026
+
+\vspace{1mm}
+
+RFK Campus Master Plan Project Team\\
+District of Columbia Office of Planning\\
+\href{mailto:OP.RFKMasterPlan@dc.gov}{OP.RFKMasterPlan@dc.gov}
+
+\vspace{2mm}
+
+\textbf{Re: Public comment on the RFK Campus Master Plan public comment draft}
+
+\vspace{2mm}
+
+Dear Members of the Project Team,
+
+As Chair of the Multimodal Accessibility Advisory Council, established under D.C.
+Official Code \S\,50--2361.31, I am writing to comment on the accessible
+transportation elements of the RFK Campus Master Plan public comment draft.
+
+Because the comment period closes before the Council's next meeting, I submit
+these comments in my individual capacity as Chair, not as a position adopted by
+a vote of the Council. The Principles for Arterial Street Space Usage cited
+below were adopted unanimously by the Council in February 2025.
+
+The RFK campus is the largest piece of undeveloped, publicly controlled land in
+the District. Almost everything else MAAC works on is a retrofit. We are asking a
+city to undo choices made fifty years ago, one block at a time, against the
+constraint of a curb that is already fully allocated. RFK is the rare case where
+the District is not repairing a street but writing one from nothing. What gets
+drawn now will govern how a disabled resident reaches this campus for the next
+half century, and it will be far more expensive to fix later than to get right
+in the first attempt.
+
+\heading{My position on parking}
+
+\textbf{I ask that the master plan commit to no general-purpose car parking
+serving the Gold Line station area or the campus core.}
+
+In February 2025 this Council unanimously adopted Principles for Arterial Street
+Space Usage in Washington, DC. That document ranks eleven uses of public street
+space in priority order. Truly market-priced car parking is eleventh -- the last
+priority, below tree boxes and green space. ADA pick-up/drop-off zones are third,
+behind only accessible sidewalks and dedicated transit lanes. A plan that
+allocates land to general parking at a site built around bus rapid transit
+inverts that order on the one site where the District has a free hand.
+
+I want to be precise about what I am and am not asking for, because the phrase is easily misread:
+
+\begin{itemize}[leftmargin=6mm, itemsep=2pt, topsep=2pt]
+  \item \textbf{No} general-purpose, commuter, or event parking supply at the
+        Gold Line station area or the campus core, and no minimum parking
+        requirements in the recommended zoning for those districts.
+  \item \textbf{Yes} to ADA-designated parking, at or above the ratio the ADA
+        requires, sited closer to entrances than any other vehicle
+        accommodation on the campus.
+  \item \textbf{Yes} to ADA pick-up/drop-off zones, designed and built from the
+        start.
+\end{itemize}
+
+Those are not in tension. Parking supply and accessible access compete for the
+same land, and the way accessible access loses that competition is by being
+treated as a subset of parking rather than as its own requirement. Every
+general space built near an entrance is a space an accessible vehicle cannot
+use.
+
+\heading{ADA pick-up/drop-off must be designed in, not retrofitted}
+
+Most trips by disabled residents to a site like this one will arrive by
+paratransit van, taxi, or rideshare, not by a private car parked for the day. A
+vehicle serving those trips needs a place to stop at the curb, level, out of the
+travel lane, with an access aisle beside it so a side-loading (or rear-loading)
+ramp can deploy.
+
+The District's record on this is the reason I raise it here. In March 2026 MAAC
+wrote to DDOT asking for a block-by-block audit of accessible pick-up/drop-off
+zones in the downtown core. The reason that audit matters is that the District
+cannot presently say how many such zones exist. It publishes no count. We know
+there are roughly 150,000 residential permit spaces, 20,000 metered spaces,
+1,400 commercial loading zones, and 600 diplomatic spaces. The figure for
+disabled residents is unknown.
+
+That is what happens when accessible loading is left to be worked out after the
+street network is set. I am asking the Office of Planning not to repeat it
+here. Specifically:
+
+\begin{itemize}[leftmargin=6mm, itemsep=2pt, topsep=2pt]
+  \item Name accessible pick-up/drop-off as a required curb use in the master
+        plan text, at every major destination on the campus -- the stadium, the
+        Gold Line station, the retail and housing districts, and the recreation
+        and open space areas.
+  \item Set a numeric target for accessible pick-up/drop-off zones in the plan
+        itself, so that the count is a design input rather than something to be
+        discovered later.
+  \item Require an access aisle and a level landing at each zone. A painted
+        space at the curb with a car parked tight against it is not usable by a
+        side-loading vehicle.
+\end{itemize}
+
+\heading{What I support}
+
+I support the Gold Line bus rapid transit connection and ask that it be
+delivered in time for the stadium opening. I support the draft plan's proposed
+bike network, built to the fully protected standard that moveDC already
+specifies, and I support extending protected bikeways across the Anacostia into
+Wards 7 and 8. I join the Washington Area Bicyclist Association in asking that
+Metrorail improvements at Stadium-Armory be reconsidered rather than treated as
+settled.
+
+I would add one thing to that list. Accessible sidewalks with ADA-compliant
+ramps, on both sides of every street and free of obstruction, are the first
+priority in the Council's adopted principles and the precondition for all of the above, as are
+crosswalks that are safe for disabled pedestrians and built with audible
+signals. A protected bikeway and a BRT station are both reached on foot or by
+wheelchair.
+
+\heading{Request}
+
+I ask that the final master plan reflect these comments, and I ask to be
+consulted as the transportation and public space elements advance to detailed
+design. MAAC is a statutory body, and I would welcome the chance to review
+specifics rather than comment only at the plan stage. The Council's adopted
+principles document is attached, and I am happy to discuss any of this with the
+team.
+
+% Keep the whole closing -- sign-off, name, title, capacity line, attachment
+% rule -- on one page. It split across pages 2/3 before this was added.
+\Needspace*{10\baselineskip}
+\vspace{2mm}
+
+Sincerely,
+
+\vspace{5mm}
+
+Karthik Balasubramanian\\
+Chair, Multimodal Accessibility Advisory Council\\
+\href{mailto:info@maacdc.org}{info@maacdc.org}
+
+{\footnotesize\itshape Submitted in my individual capacity as Chair. Not a position
+adopted by a vote of the Council.\par}
+
+\vspace{3mm}
+{\color{rulegrey}\hrule height 0.6pt}
+\vspace{2mm}
+
+{\footnotesize\color{maacnavy}\textbf{Attached:} MAAC Principles for Arterial Street
+Space Usage in Washington, DC (adopted February 12, 2025) --
+\href{https://maacdc.link/principles}{maacdc.link/principles}\par}
+
+\end{document}
