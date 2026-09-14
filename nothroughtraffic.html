@@ -1,0 +1,824 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="description" content="A briefing for the people writing Washington's Downtown Transportation Plan: through-traffic doesn't belong downtown."><meta property="og:title" content="Through-traffic doesn't belong downtown"><meta property="og:description" content="A briefing for the people writing Washington's Downtown Transportation Plan: through-traffic doesn't belong downtown."><meta property="og:url" content="https://www.maacdc.org/nothroughtraffic.html"><link rel="icon" href="assets/img/maac-logo.png"><title>Through-traffic doesn't belong downtown</title><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<style>
+:root{
+  --ground:#F1F2EE; --paper:#FAFAF7; --ink:#1B1D1B; --ink-2:#4E544F; --rule:#C9CCC5;
+  --teal:#0A9080; --teal-ink:#0B6F63; --ochre:#B27A08; --ochre-ink:#7E5605;
+  --asphalt:#232524; --asphalt-ink:#EDECE5; --asphalt-2:#B9BCB4; --asphalt-rule:#3D403E; --paint:#E7C34A;
+  --road:#3A3D3B; --house:#D7D9D2; --person:#1B1D1B; --street:#BDC0B9; --walk:#F4F4F0; --bus:#B5364B; --shirt-1:#3F6DB5; --shirt-2:#8A4FA8; --shirt-3:#D2663E;
+  --chart-a:#0A9080; --chart-b:#B27A08;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#171918; --paper:#1F2220; --ink:#ECEBE4; --ink-2:#B3B8B0; --rule:#3A3E3B;
+    --teal:#2FA697; --teal-ink:#5CC9BA; --ochre:#B98A22; --ochre-ink:#D9AE3F;
+    --road:#0F1110; --house:#3A3E3B; --person:#ECEBE4; --street:#121413; --walk:#484D49; --bus:#D9596D; --shirt-1:#7FA8E6; --shirt-2:#BC8FDB; --shirt-3:#EE8C63;
+    --chart-a:#2FA697; --chart-b:#B98A22;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#171918; --paper:#1F2220; --ink:#ECEBE4; --ink-2:#B3B8B0; --rule:#3A3E3B;
+  --teal:#2FA697; --teal-ink:#5CC9BA; --ochre:#B98A22; --ochre-ink:#D9AE3F;
+  --road:#0F1110; --house:#3A3E3B; --person:#ECEBE4; --street:#121413; --walk:#484D49; --bus:#D9596D; --shirt-1:#7FA8E6; --shirt-2:#BC8FDB; --shirt-3:#EE8C63;
+  --chart-a:#2FA697; --chart-b:#B98A22;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:Literata,Georgia,"Times New Roman",serif;font-size:23px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1100px;margin:0 auto;padding-inline:24px;padding-block:0}
+h1,h2,h3{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;text-wrap:balance;line-height:1.02;margin:0}
+h1{font-size:clamp(50px,8vw,104px);font-weight:800;letter-spacing:-0.025em}
+h2{font-size:clamp(38px,5.2vw,64px);font-weight:800;letter-spacing:-0.02em}
+p{margin:0}
+a{color:inherit;text-decoration-thickness:2px;text-underline-offset:3px;text-decoration-color:var(--teal)}
+a:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.panel{padding-block:96px;border-bottom:1px solid var(--rule)}
+.panel-grid{display:grid;grid-template-columns:1fr;gap:40px}
+.say{display:grid;grid-template-columns:1fr;gap:12px 56px;align-items:end}
+@media(min-width:900px){.say{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.say .lead{grid-column:1}.say .body{grid-column:2}}
+.say h2{margin-bottom:0}
+.say p{font-size:clamp(22px,2.2vw,26px);line-height:1.45;max-width:34ch}
+.say .big{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(84px,12vw,160px);line-height:.9;letter-spacing:-0.03em;color:var(--teal-ink);margin:0 0 14px;white-space:nowrap}
+.say .big.long{font-size:clamp(60px,8vw,110px)}
+.say.solo{display:block;max-width:46ch}
+.say.solo h2{margin-bottom:16px}
+.say .big.bad{color:var(--ochre-ink)}
+.say .src{font-size:19px;color:var(--ink-2);margin-top:18px;line-height:1.4}
+
+/* hero animation */
+.sim{margin-top:44px;border:1px solid var(--rule);background:var(--paper)}
+.sim-head{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between;padding:18px 22px 6px}
+.sim-title{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(24px,2.6vw,32px);line-height:1.1;margin:0}
+.sim-title span{color:var(--ink-2);font-weight:700}
+.sim-btns{display:flex;gap:8px}
+.sim-btns button{font:700 19px "Bricolage Grotesque",sans-serif;padding:10px 18px;border:2px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;cursor:pointer}
+.sim-btns button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.sim-btns button:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.sim .scroll{overflow-x:auto;overflow-y:hidden}
+.sim canvas{display:block;width:100%;min-width:720px;height:auto;aspect-ratio:1100/560}
+.sim-legend{display:flex;flex-wrap:wrap;gap:10px 26px;padding:10px 22px 18px;font-family:"Bricolage Grotesque",sans-serif;font-size:19px;color:var(--ink-2)}
+.sim-legend svg{height:20px;width:auto;vertical-align:-4px;margin-right:8px;overflow:visible}
+.sim-legend .flt{display:inline-block;width:16px;height:16px;border-radius:50%;margin-right:8px;vertical-align:-2px;background:radial-gradient(circle,var(--ink) 0 3px,transparent 3.5px),var(--chart-a);opacity:.9}
+.sim-count{display:flex;flex-wrap:wrap;gap:4px 30px;align-items:baseline;padding:12px 22px 0;font-family:"Bricolage Grotesque",sans-serif;font-size:19px;color:var(--ink-2)}
+.sim-count b{font-size:28px;font-weight:800;margin-left:8px;font-variant-numeric:tabular-nums}
+.sim-count .c-thru b{color:var(--ochre-ink)}
+.sim-count .c-ppl b{color:var(--teal-ink)}
+/* hero */
+.hero{padding-block:70px 60px;border-bottom:3px solid var(--ink)}
+.hero .lede{font-size:clamp(24px,2.6vw,32px);line-height:1.35;max-width:36ch;margin-top:26px}
+.hero .for{font-family:"Bricolage Grotesque",sans-serif;font-size:20px;color:var(--ink-2);margin-bottom:16px;font-weight:700}
+
+/* figures */
+figure{margin:0;background:var(--paper);border:1px solid var(--rule);padding:22px 22px 16px}
+figure .scroll{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch}
+figure svg{display:block;min-width:720px;width:100%;height:auto;font-family:"Bricolage Grotesque",sans-serif}
+figure .t{font-size:24px;font-weight:700;fill:var(--ink)}
+figure .lab{font-size:21px;font-weight:600;fill:var(--ink)}
+figure .sub{font-size:19px;fill:var(--ink-2)}
+figure .num{font-size:24px;font-weight:800;fill:var(--ink);font-variant-numeric:tabular-nums}
+figure .grid{stroke:var(--rule);stroke-width:1}
+figcaption{font-size:19px;color:var(--ink-2);line-height:1.4;margin-top:12px}
+.legend{display:flex;gap:22px;flex-wrap:wrap;font-family:"Bricolage Grotesque",sans-serif;font-size:19px;margin:0 0 10px}
+.legend span::before{content:"";display:inline-block;width:16px;height:16px;border-radius:3px;margin-right:8px;vertical-align:-2px}
+.legend .a::before{background:var(--chart-a)}
+.legend .b::before{background:var(--chart-b)}
+.legend .b2::before{background:var(--chart-b);opacity:.45}
+.legend .g::before{background:var(--rule)}
+
+/* lanes illustration */
+.lanes .lane{fill:var(--road)}
+.lanes .walk{fill:var(--teal);opacity:.85}
+.lanes .curb{fill:var(--chart-b);opacity:.6}
+.lanes .mark{stroke:var(--paint);stroke-width:2;stroke-dasharray:14 12}
+.lanes .lab{font-size:22px;font-weight:700;fill:var(--ink)}
+.lanes .sub{font-size:19px;fill:var(--ink-2)}
+
+/* underpass: the dark middle */
+.underpass{background:var(--asphalt);color:var(--asphalt-ink);position:relative}
+.underpass::before,.underpass::after{content:"";position:absolute;left:0;right:0;height:14px;background:repeating-linear-gradient(90deg,var(--paint) 0 90px,transparent 90px 150px)}
+.underpass::before{top:0}.underpass::after{bottom:0}
+.underpass .panel{border-color:var(--asphalt-rule)}
+.underpass .say .src{color:var(--asphalt-2)}
+.underpass .say .big{color:var(--paint)}
+.underpass figure{background:#2C2E2D;border-color:var(--asphalt-rule)}
+.underpass figure .t,.underpass figure .lab,.underpass figure .num{fill:var(--asphalt-ink)}
+.underpass figure .sub{fill:var(--asphalt-2)}
+.underpass figure .grid{stroke:var(--asphalt-rule)}
+.underpass figcaption{color:var(--asphalt-2)}
+.underpass a{text-decoration-color:var(--paint)}
+
+/* city gallery */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2px;background:var(--rule);border:1px solid var(--rule);margin-top:40px}
+.gallery article{background:var(--paper);padding:26px 24px 28px;display:grid;gap:6px;align-content:start}
+.gallery .year{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:20px;color:var(--ink-2)}
+.gallery .city{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:30px;line-height:1.05}
+.gallery .stat{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:58px;line-height:1;color:var(--teal-ink);letter-spacing:-0.02em;margin-top:10px}
+.gallery .what{font-size:20px;line-height:1.35;margin-top:4px}
+.gallery .how{font-size:19px;color:var(--ink-2);line-height:1.35;margin-top:8px}
+
+/* DC compare */
+.compare{display:grid;grid-template-columns:1fr;gap:2px;background:var(--rule);border:1px solid var(--rule)}
+@media(min-width:700px){.compare{grid-template-columns:1fr 1fr 1fr}}
+.compare div{background:var(--paper);padding:30px 26px}
+.compare .city{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:30px}
+.compare .pop{font-size:19px;color:var(--ink-2);margin-top:2px}
+.compare .n{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(90px,12vw,150px);line-height:.95;letter-spacing:-0.03em;margin-top:18px}
+.compare .bad .n{color:var(--ochre-ink)}
+.compare .good .n{color:var(--teal-ink)}
+.compare .what{font-size:21px;line-height:1.35;margin-top:10px;max-width:24ch}
+
+/* three moves */
+.moves{display:grid;grid-template-columns:1fr;gap:28px;margin-top:40px}
+@media(min-width:900px){.moves{grid-template-columns:1fr 1fr 1fr}}
+.moves article{border-top:4px solid var(--teal);padding-top:18px}
+.moves h3{font-size:clamp(26px,2.6vw,32px);font-weight:800;margin-bottom:10px}
+.moves p{font-size:21px;line-height:1.4}
+.moves .who{font-family:"Bricolage Grotesque",sans-serif;font-size:19px;color:var(--ink-2);margin-top:12px}
+
+/* sources */
+.sources{padding-block:44px 90px}
+.sources h3{font-size:24px;margin-bottom:14px}
+.sources ol{padding-left:1.3em;font-size:18px;line-height:1.45;margin:0}
+.sources li{margin-bottom:6px;break-inside:avoid}
+@media(min-width:900px){.sources ol{columns:2;column-gap:40px}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
+
+<div class="wrap">
+<header class="hero">
+  <p class="for">A briefing for the people writing Washington's Downtown Transportation Plan</p>
+  <h1>Through-traffic doesn't belong downtown.</h1>
+  <p class="lede">A downtown is for the people going to it. Cars driving across it to get somewhere else bring noise, crashes and long crossings, and leave nothing behind. Every city centre that pushed that traffic out onto the ring got busier on foot, and several did better business. Washington's downtown, with one office in five empty, needs exactly that.</p>
+  <div class="sim" id="sim">
+    <div class="sim-head">
+      <p class="sim-title" id="simTitle">Today <span>· 4 in 10 cars on downtown streets are passing through</span></p>
+      <div class="sim-btns" role="group" aria-label="Choose a scene">
+        <button type="button" id="btnToday" aria-pressed="true">Today</button>
+        <button type="button" id="btnPlan" aria-pressed="false">With the plan</button>
+      </div>
+    </div>
+    <div class="scroll"><canvas id="simCanvas" width="1100" height="560" role="img" aria-label="Animated map of a downtown grid. Today, cars pass straight through the centre; with the plan, filters at the cell lines stop cars crossing the centre while every address stays reachable from the ring, and drivers park and walk in, buses and bikes pass the filters, and the freed street space fills with people at tables."></canvas></div>
+    <div class="sim-count"><span class="c-thru">Cars cutting across the centre<b id="cntThru">0</b></span><span class="c-ppl">People on the street<b id="cntPpl">0</b></span><span>(live count in this model)</span></div>
+    <div class="sim-legend"><span><svg viewBox="0 0 30 16" aria-hidden="true"><rect x="1" y="2" width="28" height="12" rx="4" fill="var(--chart-b)"/><rect x="18" y="4" width="5" height="8" rx="1.5" fill="var(--paper)" opacity=".85"/><rect x="4" y="4.5" width="3.5" height="7" rx="1.2" fill="var(--paper)" opacity=".7"/></svg>passing through</span><span><svg viewBox="0 0 30 16" aria-hidden="true"><rect x="1" y="2" width="28" height="12" rx="4" fill="var(--chart-a)"/><rect x="18" y="4" width="5" height="8" rx="1.5" fill="var(--paper)" opacity=".85"/><rect x="4" y="4.5" width="3.5" height="7" rx="1.2" fill="var(--paper)" opacity=".7"/></svg>going downtown; the driver parks and walks in</span><span><svg viewBox="0 0 12 22" aria-hidden="true"><circle cx="6" cy="4" r="3.4" fill="var(--person)"/><path d="M6 9v6M6 15l-3 6M6 15l3 6" stroke="var(--person)" stroke-linecap="round" stroke-width="2.4" fill="none"/><path d="M6 9v6" stroke="var(--person)" stroke-width="5.4" stroke-linecap="round"/></svg>people</span><span><svg viewBox="0 0 46 16" aria-hidden="true"><rect x="1" y="1.5" width="44" height="13" rx="3" fill="var(--bus)"/><rect x="38" y="3.5" width="4" height="9" rx="1" fill="var(--paper)" opacity=".85"/><rect x="8" y="5" width="24" height="6" rx="1.5" fill="var(--paper)" opacity=".35"/></svg>bus; it stops for riders</span><span><svg viewBox="0 0 26 16" aria-hidden="true"><path d="M3 8h20" stroke="var(--ink)" stroke-width="2.4" stroke-linecap="round"/><circle cx="3" cy="8" r="2.2" fill="var(--ink)"/><circle cx="23" cy="8" r="2.2" fill="var(--ink)"/><path d="M12 2.5v11" stroke="var(--chart-a)" stroke-width="3.2" stroke-linecap="round"/><circle cx="13.5" cy="8" r="3.2" fill="var(--ink)"/></svg>bike</span><span><i class="flt"></i>filter: bollards or a planter; cars turn back, buses, bikes and walkers pass</span></div>
+  </div>
+</header>
+
+<!-- 1. HOW MUCH IS PASSING THROUGH -->
+<section class="panel">
+  <div class="panel-grid">
+    <div class="say"><div class="lead">
+      <p class="big long">4 in 10</p>
+      <h2>Much of the traffic downtown was never going downtown.</h2></div><div class="body">
+      <p>Before Ghent redrew its centre in 2017, the city counted the cars and found that nearly 40 percent of them had no destination inside it. Groningen made the same discovery in 1977: when it blocked the shortcut, car traffic in the centre fell by almost half, while the share of people who drove <em>to</em> the centre barely moved. The cars that vanished were the ones passing through.</p>
+      <p class="src">Stad Gent, The Circulation Plan; Tsubohara, University of Groningen, on the 1977 plan.</p>
+    </div></div>
+    <figure aria-labelledby="f1">
+      <div class="legend"><span class="g">before</span><span class="a">after</span></div>
+      <div class="scroll">
+      <svg viewBox="0 0 720 250" role="img" aria-describedby="f1cap">
+        <text id="f1" class="t" x="0" y="24">Groningen, 1977: what left when the shortcut closed</text>
+        <!-- scale: 0 at x=300, 100% = 400px -->
+        <g transform="translate(0,66)">
+          <text class="lab" x="0" y="20">Cars in the centre, per hour</text>
+          <rect x="300" y="0" width="400" height="14" rx="4" fill="var(--rule)"/>
+          <rect x="300" y="18" width="212" height="14" rx="4" fill="var(--chart-a)"/>
+          <text class="num" x="522" y="31">−47%</text>
+        </g>
+        <g transform="translate(0,150)">
+          <text class="lab" x="0" y="20">Trips into the centre made by car</text>
+          <rect x="300" y="0" width="144" height="14" rx="4" fill="var(--rule)"/>
+          <text class="sub" x="454" y="13">36%</text>
+          <rect x="300" y="30" width="136" height="14" rx="4" fill="var(--chart-a)"/>
+          <text class="num" x="446" y="44">34%</text>
+        </g>
+        <line class="grid" x1="300" x2="300" y1="60" y2="200"/>
+        <text class="sub" x="300" y="236">0</text><text class="sub" x="700" y="234" text-anchor="end">top bar indexed to its 1976 level</text>
+      </svg>
+      </div>
+      <figcaption id="f1cap">Hourly private-car counts in the inner city fell 47 percent after the plan; the car share of trips ending in the centre went from 36 to 34 percent.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 2. DOWNTOWN DC TODAY -->
+<section class="panel">
+  <div class="panel-grid">
+    <div class="say"><div class="lead">
+      <p class="big bad">23%</p>
+      <h2>Downtown Washington needs people who stop.</h2></div><div class="body">
+      <p>Nearly one office in four downtown stood empty at the end of 2025, twice the rate of the decade before the pandemic. Office attendance is about half what it was. The District's answer is to make downtown a place people live: 15,000 new residents by 2028, most of them in converted office buildings. The downtown BID now dates that goal to 2033 and says that even if every announced conversion is built, the count reaches about 40 percent of it. Residents, shoppers and diners are the customers now. The cars crossing downtown on Constitution Avenue at 5 pm carry none of them.</p>
+      <p class="src">DowntownDC BID, State of Downtown 2025; Mayor's Comeback Plan, January 2023.</p>
+    </div></div>
+    <figure aria-labelledby="f2">
+      <div class="scroll">
+      <svg viewBox="0 0 720 360" role="img" aria-describedby="f2cap">
+        <text id="f2" class="t" x="0" y="24">Downtown DC office vacancy</text>
+        <!-- plot x 90..690 (2019..2025 => 100px/yr), y 60..300 = 30%..0% (8px per point) -->
+        <line class="grid" x1="90" x2="690" y1="300" y2="300"/>
+        <line class="grid" x1="90" x2="690" y1="220" y2="220"/>
+        <line class="grid" x1="90" x2="690" y1="140" y2="140"/>
+        <line class="grid" x1="90" x2="690" y1="60" y2="60"/>
+        <text class="sub" x="80" y="306" text-anchor="end">0%</text>
+        <text class="sub" x="80" y="226" text-anchor="end">10%</text>
+        <text class="sub" x="80" y="146" text-anchor="end">20%</text>
+        <text class="sub" x="80" y="66" text-anchor="end">30%</text>
+        <!-- pre-pandemic average 11% => y=212 -->
+        <line x1="90" x2="690" y1="212" y2="212" stroke="var(--chart-a)" stroke-width="3"/>
+        <text class="lab" x="690" y="204" text-anchor="end" fill="var(--ink)">11%, the 2010 to 2018 average</text>
+        <!-- 2019 16.3 y=169.6 | 2020 16.8 165.6 | 2021 17.5 160 | 2022 19.9 140.8 | 2023 21.1 131.2 | 2024 22.4 120.8 | 2025 22.9 116.8 -->
+        <path d="M90 169.6 L190 165.6 L290 160 L390 140.8 L490 131.2 L590 120.8 L690 116.8" fill="none" stroke="var(--chart-b)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="var(--chart-b)"><circle cx="90" cy="169.6" r="8"/><circle cx="690" cy="116.8" r="9"/></g>
+        <text class="num" x="90" y="152" text-anchor="start">16.3%</text>
+        <text class="num" x="690" y="99" text-anchor="end">22.9%</text>
+        <text class="lab" x="90" y="334" text-anchor="middle">2019</text>
+        <text class="lab" x="290" y="334" text-anchor="middle">2021</text>
+        <text class="lab" x="490" y="334" text-anchor="middle">2023</text>
+        <text class="lab" x="690" y="334" text-anchor="middle">2025</text>
+      </svg>
+      </div>
+      <figcaption id="f2cap">Year-end vacancy inside the DowntownDC BID boundary, CoStar data as reported in State of Downtown 2025. Trophy buildings sit at 11 percent, Class A at 24.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 3. GHENT SHOPS -->
+<section class="panel">
+  <div class="panel-grid">
+    <div class="say"><div class="lead">
+      <p class="big">+20%</p>
+      <h2>Take the cars out of the centre and the shops do better.</h2></div><div class="body">
+      <p>Ghent redrew its centre in April 2017. The city's evaluation a year later counted new shops and restaurants in the central postcode up 20 percent, closures and bankruptcies down 7 percent, and the centre growing faster than the rest of the city. Madrid saw the same thing when it closed its centre to through-traffic in late 2018: card spending that Christmas rose 8.6 percent inside the zone against 3.3 percent in the rest of the city.</p>
+      <p class="src">Stad Gent and Transport &amp; Mobility Leuven, Evaluatie Circulatieplan Gent, 2019; Ayuntamiento de Madrid analysis of 20 million BBVA card transactions, January 2019. Madrid's retail lobby disputed the city's figure with a survey of its members.</p>
+    </div></div>
+    <figure aria-labelledby="f3">
+      <div class="scroll">
+      <svg viewBox="0 0 720 320" role="img" aria-describedby="f3cap">
+        <text id="f3" class="t" x="0" y="24">Ghent's centre, the year after through-traffic ended</text>
+        <!-- zero at x=380, 4px per % -->
+        <line class="grid" x1="380" x2="380" y1="56" y2="280"/>
+        <g transform="translate(0,64)">
+          <text class="lab" x="0" y="22">New shops and restaurants</text>
+          <rect x="380" y="4" width="80" height="30" rx="4" fill="var(--chart-a)"/>
+          <text class="num" x="470" y="27">+20%</text>
+        </g>
+        <g transform="translate(0,118)">
+          <text class="lab" x="0" y="22">Closures and bankruptcies</text>
+          <rect x="352" y="4" width="28" height="30" rx="4" fill="var(--chart-a)"/>
+          <text class="num" x="342" y="27" text-anchor="end">−7%</text>
+        </g>
+        <g transform="translate(0,172)">
+          <text class="lab" x="0" y="22">Cyclists to and from the centre</text>
+          <rect x="380" y="4" width="240" height="30" rx="4" fill="var(--chart-a)"/>
+          <text class="num" x="630" y="27">+60%</text>
+        </g>
+        <g transform="translate(0,226)">
+          <text class="lab" x="0" y="22">Cars in and out of the centre</text>
+          <rect x="312" y="4" width="68" height="30" rx="4" fill="var(--chart-b)"/>
+          <text class="num" x="302" y="27" text-anchor="end">−17%</text>
+        </g>
+        <text class="sub" x="380" y="306" text-anchor="middle">0</text>
+      </svg>
+      </div>
+      <figcaption id="f3cap">Business figures are 2018 versus 2017 for postcode 9000, from Graydon company data; traffic counts are the cordon counts in the same evaluation.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 4. OSLO -->
+<section class="panel">
+  <div class="panel-grid">
+    <div class="say"><div class="lead">
+      <p class="big">+43%</p>
+      <h2>Oslo cleared the parking and people stayed longer.</h2></div><div class="body">
+      <p>Since 2016 Oslo has removed about 760 street parking spaces inside its inner ring, most of them in 2017 and 2018, and filled the space with benches, bike lanes and terraces. Traffic in the centre fell. Pedestrian counts rose 14 percent, and the number of people sitting, standing and lingering in the central squares rose 43 percent. In 2019 not one pedestrian or cyclist died on an Oslo street.</p>
+      <p class="src">Sweco for Oslo kommune, Bylivsevaluering 2019. The same evaluation found shop turnover in the centre grew at the same pace as the rest of Oslo in 2018.</p>
+    </div></div>
+    <figure aria-labelledby="f4">
+      <div class="scroll">
+      <svg viewBox="0 0 720 280" role="img" aria-describedby="f4cap">
+        <text id="f4" class="t" x="0" y="24">Oslo city centre, 2017 to 2019</text>
+        <!-- zero at x=360, 6px per % -->
+        <line class="grid" x1="360" x2="360" y1="56" y2="236"/>
+        <g transform="translate(0,66)">
+          <text class="lab" x="0" y="22">People lingering in the squares</text>
+          <rect x="360" y="4" width="258" height="30" rx="4" fill="var(--chart-a)"/>
+          <text class="num" x="628" y="27">+43%</text>
+        </g>
+        <g transform="translate(0,126)">
+          <text class="lab" x="0" y="22">People walking</text>
+          <rect x="360" y="4" width="84" height="30" rx="4" fill="var(--chart-a)"/>
+          <text class="num" x="454" y="27">+14%</text>
+        </g>
+        <g transform="translate(0,186)">
+          <text class="lab" x="0" y="22">Cars</text>
+          <rect x="294" y="4" width="66" height="30" rx="4" fill="var(--chart-b)"/>
+          <text class="num" x="284" y="27" text-anchor="end">−11%</text>
+        </g>
+        <text class="sub" x="360" y="268" text-anchor="middle">0</text>
+      </svg>
+      </div>
+      <figcaption id="f4cap">Pedestrian and stay counts at the same points, 2017 versus 2019. Car counts compare November 2016 with November 2018.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 5. STREET SPACE -->
+<section class="panel">
+  <div class="panel-grid">
+    <div class="say"><div class="lead">
+      <p class="big bad">3 of 4</p>
+      <h2>Downtown streets are mostly for the cars passing through.</h2></div><div class="body">
+      <p>Measured across the whole streetscape, more than three-quarters of New York's street space is travel lane or parking. Sidewalks get less than a quarter. Paris gives half its public space to motor vehicles that carry 13 percent of its trips. Washington has not published the split for its own downtown, but the counts say what the lanes are for: 120,000 vehicles a day pass under the Mall in the I-395 tunnel, and 29,500 cross downtown on Constitution Avenue between 12th and 14th.</p>
+      <p class="src">Transportation Alternatives, NYC 25x25 (2021); Le Monde on Paris public space (2016); DDOT 2024 traffic volume counts.</p>
+    </div></div>
+    <figure aria-labelledby="f5">
+      <div class="legend"><span class="b">travel lanes</span><span class="b2">parking</span><span class="a">sidewalks</span></div>
+      <div class="scroll">
+      <svg viewBox="0 0 720 200" role="img" aria-describedby="f5cap">
+        <text id="f5" class="t" x="0" y="24">New York City street space, lanes, parking and sidewalks</text>
+        <!-- 600px = 100%, x from 90; gaps 2px -->
+        <g transform="translate(90,60)">
+          <rect x="0" y="0" width="323" height="44" rx="4" fill="var(--chart-b)"/>
+          <rect x="325" y="0" width="125" height="44" rx="4" fill="var(--chart-b)" opacity=".45"/>
+          <rect x="452" y="0" width="142" height="44" rx="4" fill="var(--chart-a)"/>
+          <rect x="596" y="0" width="4" height="44" rx="1" fill="var(--ink)"/>
+          <text class="num" x="0" y="80">54%</text>
+          <text class="num" x="325" y="80">21%</text>
+          <text class="num" x="452" y="80">24%</text>
+          <text class="sub" x="0" y="108">travel lanes</text>
+          <text class="sub" x="325" y="108">parking</text>
+          <text class="sub" x="452" y="108">sidewalks</text>
+          <text class="sub" x="600" y="134" text-anchor="end">bike lanes: under 1%</text>
+        </g>
+      </svg>
+      </div>
+      <figcaption id="f5cap">Share of the total streetscape area: vehicle travel lanes 54.2 percent, on-street parking 21.1 percent, sidewalks 23.7 percent, bike lanes 0.9 percent.</figcaption>
+    </figure>
+  </div>
+</section>
+</div>
+
+<!-- THE UNDERPASS -->
+<section class="underpass">
+<div class="wrap">
+  <!-- 6. WIDENING -->
+  <section class="panel">
+    <div class="panel-grid">
+      <div class="say"><div class="lead">
+        <p class="big">$2.8B</p>
+        <h2>Widen a downtown lane and it fills.</h2></div><div class="body">
+        <p>Houston widened one freeway to 23 lanes. Between 2011 and 2014, three to six years after the work finished, the evening commute on it grew 55 percent, about 23 minutes. The best study of American cities finds the same thing: add road and driving grows to fill it. A lane kept open across downtown so commuters can save two minutes recruits more commuters, and the two minutes are gone within a few years.</p>
+        <p class="src">Houston TranStar via City Observatory, 2015; Duranton and Turner, American Economic Review, 2011.</p>
+      </div></div>
+      <figure aria-labelledby="f6">
+        <div class="scroll">
+        <svg viewBox="0 0 720 250" role="img" aria-describedby="f6cap">
+          <text id="f6" class="t" x="0" y="24">Houston's evening commute after the widening</text>
+          <g transform="translate(0,70)">
+            <text class="lab" x="0" y="26">2011</text>
+            <rect x="120" y="4" width="316" height="34" rx="4" fill="var(--asphalt-rule)"/>
+            <text class="num" x="448" y="29">2011 commute</text>
+          </g>
+          <g transform="translate(0,140)">
+            <text class="lab" x="0" y="26">2014</text>
+            <rect x="120" y="4" width="490" height="34" rx="4" fill="var(--paint)"/>
+            <text class="num" x="622" y="29">+55%</text>
+          </g>
+          <line class="grid" x1="120" x2="120" y1="70" y2="190"/>
+          <text class="sub" x="120" y="224">0</text>
+          <text class="sub" x="680" y="224" text-anchor="end">indexed to the 2011 evening commute</text>
+        </svg>
+        </div>
+        <figcaption id="f6cap">Houston TranStar travel times reported by City Observatory: the afternoon commute grew 23 minutes, or 55 percent, from 2011 to 2014. The Katy Freeway widening finished in 2008.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 7. EVAPORATION -->
+  <section class="panel" style="border-bottom:0">
+    <div class="panel-grid">
+      <div class="say"><div class="lead">
+        <p class="big long">51 of 70</p>
+        <h2>Close the lane and some of the traffic just stops.</h2></div><div class="body">
+        <p>Seventy cases from eleven countries where road space was closed or removed, many of them in city centres. In 51 of them traffic fell, and the surrounding streets did not absorb it. A typical tenth of the cars were never replaced. People changed when, how, or whether they made the trip. Local papers predicted traffic chaos. It rarely came.</p>
+        <p class="src">Cairns, Atkins and Goodwin, 2002. Median reduction 11 percent, average 22 percent.</p>
+      </div></div>
+      <figure aria-labelledby="f7">
+        <div class="scroll">
+        <svg viewBox="0 0 720 260" role="img" aria-describedby="f7cap">
+          <text id="f7" class="t" x="0" y="24">What traffic did after road space was removed</text>
+          <g transform="translate(0,64)"><text class="lab" x="0" y="26">Traffic fell</text><rect x="240" y="4" width="335" height="32" rx="4" fill="var(--chart-a)"/><text class="num" x="586" y="28">51</text></g>
+          <g transform="translate(0,124)"><text class="lab" x="0" y="26">No clear change</text><rect x="240" y="4" width="53" height="32" rx="4" fill="var(--asphalt-rule)"/><text class="num" x="304" y="28">8</text></g>
+          <g transform="translate(0,184)"><text class="lab" x="0" y="26">Traffic rose</text><rect x="240" y="4" width="72" height="32" rx="4" fill="var(--paint)"/><text class="num" x="323" y="28">11</text></g>
+          <line class="grid" x1="240" x2="240" y1="64" y2="224"/>
+          <text class="sub" x="240" y="250">0</text><text class="sub" x="700" y="250" text-anchor="end">70 cases</text>
+        </svg>
+        </div>
+        <figcaption id="f7cap">Times Square in 2009 is one of the later cases of the same kind.</figcaption>
+      </figure>
+    </div>
+  </section>
+</div>
+</section>
+
+<div class="wrap">
+<!-- 8. PENNSYLVANIA AVENUE -->
+<section class="panel">
+  <div class="panel-grid">
+    <div class="say"><div class="lead">
+      <p class="big long">8 to 4</p>
+      <h2>Washington has already found the spare road.</h2></div><div class="body">
+      <p>When the block of Pennsylvania Avenue in front of the White House closed in 1995, the avenue stopped working as a route across downtown. DDOT's own 2018 study found that drivers now use it for a few blocks and turn off, leaving "excess capacity and an opportunity to repurpose roadway space." This spring the National Capital Planning Commission put out three designs that cut the avenue from eight lanes to four between 3rd and 13th Street. Take the through-route away and the lanes were never needed.</p>
+      <p class="src">DDOT and NCPC, Pennsylvania Avenue East of the White House Transportation Study, 2018; NCPC design concepts, April 2026.</p>
+    </div></div>
+    <figure aria-labelledby="f8">
+      <div class="scroll">
+      <svg class="lanes" viewBox="0 0 720 330" role="img" aria-describedby="f8cap">
+        <text id="f8" class="t" x="0" y="24">Pennsylvania Avenue NW, 3rd to 13th Street</text>
+        <!-- TODAY: 8 lanes, each 60px wide, from x=120 to 600; sidewalks 30 each side -->
+        <g transform="translate(0,50)">
+          <text class="lab" x="0" y="22">Today</text>
+          <text class="sub" x="0" y="46">8 lanes</text>
+          <rect class="walk" x="120" y="4" width="30" height="80"/>
+          <g class="lane"><rect x="152" y="4" width="56" height="80"/><rect x="210" y="4" width="56" height="80"/><rect x="268" y="4" width="56" height="80"/><rect x="326" y="4" width="56" height="80"/><rect x="384" y="4" width="56" height="80"/><rect x="442" y="4" width="56" height="80"/><rect x="500" y="4" width="56" height="80"/><rect x="558" y="4" width="56" height="80"/></g>
+          <rect class="walk" x="616" y="4" width="30" height="80"/>
+        </g>
+        <!-- PROPOSED: 4 travel lanes incl. turn, 2 curbside zones, wider walks -->
+        <g transform="translate(0,180)">
+          <text class="lab" x="0" y="22">Proposed</text>
+          <text class="sub" x="0" y="46">4 lanes, 2 curb zones</text>
+          <rect class="walk" x="120" y="4" width="120" height="80"/>
+          <rect class="curb" x="242" y="4" width="60" height="80"/>
+          <g class="lane"><rect x="304" y="4" width="56" height="80"/><rect x="362" y="4" width="56" height="80"/><rect x="420" y="4" width="56" height="80"/><rect x="478" y="4" width="56" height="80"/></g>
+          <rect class="curb" x="536" y="4" width="60" height="80"/>
+          <rect class="walk" x="598" y="4" width="120" height="80"/>
+          <text class="sub" x="120" y="112">wider sidewalk</text>
+          <text class="sub" x="304" y="112">travel and turn lanes</text>
+          <text class="sub" x="718" y="112" text-anchor="end">loading, seating</text>
+        </g>
+      </svg>
+      </div>
+      <figcaption id="f8cap">Schematic of the lane count in NCPC's April 2026 concepts, not a measured cross-section. Green is sidewalk, dark is travel lane, gold is curbside loading and seating.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 9. GALLERY -->
+<section class="panel">
+  <div class="say solo">
+    <h2>Eight city centres that put through-traffic on the ring.</h2>
+    <p>None of them banned cars. Every address in the centre stayed reachable for deliveries, residents and visitors. What ended was driving across the centre to get somewhere else.</p>
+  </div>
+  <div class="gallery">
+    <article><p class="year">1962</p><p class="city">Copenhagen</p><p class="stat">3×</p><p class="what">as many people using the centre as before the main street closed to cars</p><p class="how">Many local merchants expected the closure to scare customers away. Car-free space grew from 15,000 to 100,000 square metres by 2005.</p></article>
+    <article><p class="year">1977</p><p class="city">Groningen</p><p class="stat">−47%</p><p class="what">cars in the centre; the plan went in overnight</p><p class="how">Four zones you cannot drive between. About 80 shopkeepers on seven streets appealed to the Crown against it. Six in ten trips are now by bike.</p></article>
+    
+    <article><p class="year">2005</p><p class="city">Seoul</p><p class="stat">+30%</p><p class="what">property values within 50 metres of the freeway that came down</p><p class="how">An elevated road carrying 169,000 cars a day was demolished and the stream beneath it uncovered. Summer air along it is up to 10 degrees Fahrenheit cooler.</p></article>
+    <article><p class="year">2009</p><p class="city">New York</p><p class="stat">−63%</p><p class="what">injuries to people in cars after Broadway closed through Times Square</p><p class="how">Pedestrian injuries fell 35 percent and foot traffic rose 11 percent. The trial was made permanent in 2010.</p></article>
+    <article><p class="year">2016</p><p class="city">Leuven</p><p class="stat">8.9%</p><p class="what">shop vacancy in the centre after ten years, down from 9.2</p><p class="how">The rest of Flanders went from 9.9 to 13.5 percent over the same decade. Car traffic in the centre down 23 percent, cyclists up 35.</p></article>
+    <article><p class="year">2017</p><p class="city">Ghent</p><p class="stat">40%</p><p class="what">of centre traffic was passing through before 2017</p><p class="how">Six zones, one weekend, 2,500 signs. A junction that carried up to 800 cars an hour now carries up to 1,400 bikes an hour. The alderman responsible was re-elected with four times the votes.</p></article>
+    <article><p class="year">2019</p><p class="city">Oslo</p><p class="stat">+43%</p><p class="what">people lingering in the central squares</p><p class="how">About 760 parking spaces inside the inner ring became benches, bike lanes and terraces. No pedestrian or cyclist died that year.</p></article>
+    <article><p class="year">2024</p><p class="city">Paris</p><p class="stat">−54%</p><p class="what">motor traffic in the city since 2002</p><p class="how">In November 2024 most of the four central districts became a zone where cars may enter only to stop. The city counted 350,000 to 550,000 vehicles a day crossing them, a large share without stopping.</p></article>
+  </div>
+</section>
+
+<!-- 10. WASHINGTON DEATHS -->
+<section class="panel">
+  <div class="say solo" style="margin-bottom:36px">
+    <h2>What the redesigns already did here.</h2>
+    <p>Washington and Oslo are cities of about 700,000 people. Traffic deaths in a year:</p>
+  </div>
+  <div class="compare">
+    <div class="bad"><p class="city">Washington, 2023</p><p class="pop">and again in 2024</p><p class="n">52</p><p class="what">The most since 2007, nine years into a promise to reach zero.</p></div>
+    <div class="good"><p class="city">Washington, 2025</p><p class="pop">the lowest in twelve years</p><p class="n">25</p><p class="what">DDOT credited road redesigns and camera enforcement. The largest percentage drop of any state in the federal preliminary count.</p></div>
+    <div class="good"><p class="city">Oslo, 2019</p><p class="pop">two years into the car-free centre</p><p class="n">1</p><p class="what">A driver who hit a fence. No pedestrian and no cyclist died.</p></div>
+  </div>
+  <div class="say solo" style="margin-top:40px">
+    <p>Roughly two of every three people who work in Washington live outside it, and most of the cars on downtown streets at rush hour are theirs. Downtown's new customers, the residents the Comeback Plan is counting on, are the people those cars drive past.</p>
+    <p class="src">MPD traffic fatality counts as of 11 September 2026; Statens vegvesen, Oslo 2019; US Census commuting flows, 2016 to 2020: 36 percent of DC workers live in DC.</p>
+  </div>
+</section>
+
+<!-- 11. THREE MOVES -->
+<section class="panel" style="border-bottom:0">
+  <div class="say solo">
+    <h2>What the plan can borrow, in order.</h2>
+  </div>
+  <div class="moves">
+    <article><h3>Keep every address reachable. End the crossing.</h3><p>Divide downtown into a few cells. Cars enter any cell from the ring and the freeway and leave the way they came. The tool is a filter: a row of bollards or a planter where a street crosses the cell line, with a gap for buses, bikes and walkers. Deliveries, residents, garages and visitors lose nothing. The trip across downtown loses its reason to exist.</p><p class="who">Groningen 1977, Ghent 2017, Paris 2024</p></article>
+    <article><h3>Give the freed lanes to the people who stop.</h3><p>Pennsylvania Avenue is going from eight lanes to four. K Street, Constitution and Independence carry the same kind of traffic. The spare lanes are bus lanes, loading zones, terraces and wider sidewalks for the residents the plan wants to attract. On London streets rebuilt this way, retail vacancy fell 17 percent.</p><p class="who">Oslo 2017 to 2019, London 2018 study</p></article>
+    <article><h3>Run it as a six-month trial and count.</h3><p>Copenhagen and New York both began with a temporary closure their merchants doubted. The counts settled the argument, and the trial was made permanent.</p><p class="who">Copenhagen 1962, New York 2009</p></article>
+  </div>
+</section>
+
+<section class="sources">
+  <h3>Sources</h3>
+  <ol>
+    <li>Stad Gent. <a href="https://stad.gent/en/mobility-ghent/circulation-plan">The Circulation Plan</a>; CIHT (2018), <a href="https://www.ciht.org.uk/news/learning-from-ghent-how-to-beat-congestion/">Learning from Ghent</a>; alderman Filip Watteeuw's preference votes, 3,270 in 2012 and about 13,000 in 2018, <a href="https://nl.wikipedia.org/wiki/Filip_Watteeuw">nl.wikipedia</a>; <a href="https://persruimte.stad.gent/164723-circulatieplan-en-parkeerplan-bereiken-hun-doel-meer-verkeersveiligheid-en-leefkwaliteit-in-gent-bijsturingen-zorgen-voor-verbetering/">Stad Gent first evaluation (2018)</a>.</li>
+    <li>Tsubohara, S. <a href="https://pure.rug.nl/ws/files/14433101/317.pdf">The effect and modification of the Traffic Circulation Plan (VCP), Groningen</a>, University of Groningen; BicycleDutch (2016) on the cycling share.</li>
+    <li>DowntownDC BID (May 2026). <a href="https://www.downtowndc.org/wp-content/uploads/2026/05/260428_DDC_SoD_2025_Print.pdf">State of Downtown 2025</a>; <a href="https://www.downtowndc.org/press_release/downtowndc-bids-state-of-downtown-2024-report-shows-positive-trends/">State of Downtown 2024 release</a>.</li>
+    <li>Executive Office of the Mayor (9 Jan 2023). <a href="https://mayor.dc.gov/release/mayor-bowser-unveils-dcs-comeback-plan">DC's Comeback Plan</a>; DMPED, <a href="https://dmped.dc.gov/page/housing-downtown-hid-program">Housing in Downtown program</a>.</li>
+    <li>NYC DOT (January 2010). <a href="https://nacto.org/wp-content/uploads/greenlight_midtown_nycdot.pdf">Green Light for Midtown evaluation report</a>.</li>
+    <li>Stad Gent and Transport &amp; Mobility Leuven (May 2019). <a href="https://stad.gent/sites/default/files/onepager/cta/Evaluatierapport%20Circulatieplan%20Gent%202019%20finaal.pdf">Evaluatie Circulatieplan Gent, tweede periode</a>, sections 3.4.1 and 3.4.3.</li>
+    <li>Madrid Central: <a href="https://www.eldiario.es/madrid/encargado-ayuntamiento-madrid-bbva-restricciones_1_1734249.html">elDiario.es (21 Jan 2019)</a> on the Ayuntamiento de Madrid analysis of BBVA card data.</li>
+    <li>Transport for London (16 Nov 2018). <a href="https://tfl-newsroom.prgloo.com/news/tfl-press-release-new-research-shows-getting-more-people-walking-and-cycling-could-help-save-our-high-streets">New research on walking, cycling and high streets</a>, UCL Street Appeal study.</li>
+    <li>Sweco for Oslo kommune (2019). <a href="https://www.oslo.kommune.no/get-file/1124381/1a74b8b6c37423683fed7c9a1a604ff80930005f4e16a82a1eb43dfe8ee55818">Bylivsevaluering 2019, sluttrapport</a>; Oslo kommune, <a href="https://www.oslo.kommune.no/byutvikling/bilfritt-byliv-2016-2023/">Bilfritt byliv 2016 to 2023</a>; Statens vegvesen (30 Dec 2019), <a href="https://www.vegvesen.no/om-oss/presse/aktuelt/lokalt/region-ost/en-person-drept-i-oslo-trafikken-i-2019/">one traffic death in Oslo in 2019</a>; Oslo kommune, <a href="https://www.oslo.kommune.no/get-file/1124386/7a686b533c0ff4dd2d99a24690810804503b2a805c36c5cc8b9345e6012a0a87">A step towards the city centre of the future: car-free liveability 2017 to 2019</a> (traffic down 11 percent, November 2016 to November 2018).</li>
+    <li>Transportation Alternatives (2021). <a href="https://nyc25x25.org/methodology">NYC 25x25, methodology</a>. Paris public space: Le Monde (30 Nov 2016) via <a href="https://www.caradisiac.com/a-paris-la-voiture-occupe-la-moitie-de-l-espace-public-111377.htm">Caradisiac</a>.</li>
+    <li>DDOT. <a href="https://opendata.dc.gov/datasets/DCGIS::2024-traffic-volume">2024 Traffic Volume</a>, Open Data DC: I-395 under the Mall 120,867; Constitution Ave NW between 12th and 14th 29,549; K St NW at 16th to 17th 19,252 vehicles a day.</li>
+    <li>City Observatory (2015). <a href="https://cityobservatory.org/reducing-congestion-katy-didnt/">Reducing congestion: Katy didn't.</a> Duranton, G. and Turner, M. (2011). <a href="https://www.aeaweb.org/articles?id=10.1257/aer.101.6.2616">The Fundamental Law of Road Congestion</a>, <em>American Economic Review</em>.</li>
+    <li>Cairns, S., Atkins, S. and Goodwin, P. (2002). <a href="https://nacto.org/wp-content/uploads/disappearing_traffic_cairns.pdf">Disappearing traffic? The story so far.</a></li>
+    <li>DDOT and NCPC (March 2018). <a href="https://www.ncpc.gov/docs/C_PennAve_Transportation_Study_DDOT.pdf">Pennsylvania Avenue East of the White House Transportation Study</a>; NCPC (21 Apr 2026), <a href="https://www.ncpc.gov/news/item/260/1/">three design concepts released</a>; lane counts per WJLA (3 Apr 2026).</li>
+    <li>Copenhagen: Gehl, J. (2010), <em>Cities for People</em> (car-free area 15,800 to 99,780 square metres, 1962 to 2005); merchants' fears per <a href="https://en.wikipedia.org/wiki/Str%C3%B8get">Wikipedia, Strøget</a>; <a href="https://www.pps.org/article/howtorevitalizeacity">Project for Public Spaces, How to revitalize a city</a>, from Gehl et al., <em>New City Life</em> (2006).</li>
+    <li>Seoul: <a href="https://www.landscapeperformance.org/case-study-briefs/cheonggyecheon-stream-restoration">Landscape Performance Series, Cheonggyecheon</a>.</li>
+    <li>Leuven: <a href="https://www.vrt.be/vrtnws/nl/2026/08/27/leuven-10-jaar-circulatieplan-veranderd-fietsers-autos-handel/">VRT NWS (27 Aug 2026), ten years of the circulation plan</a>.</li>
+    <li>Paris: <a href="https://www.paris.fr/pages/le-bilan-des-deplacements-a-paris-en-2023-27604">Ville de Paris, Bilan des déplacements 2023</a>; <a href="https://bovp.apps.paris.fr/doc_num_data.php?explnum_id=31507">Arrêté 2024P16495</a> creating the central limited-traffic zone.</li>
+    <li>Washington deaths: <a href="https://mpdc.dc.gov/page/traffic-data">MPD traffic data</a>; <a href="https://www.nbcwashington.com/news/local/transportation/dc-traffic-deaths-at-12-year-low-as-city-credits-road-redesigns/3980380/">NBC4 (26 Aug 2025)</a>; NHTSA, <a href="https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813800">Early Estimate of Motor Vehicle Traffic Fatalities in 2025</a> (DC down 46.8 percent, the largest decrease in the state table). Commuting: <a href="https://www2.census.gov/programs-surveys/demo/tables/metro-micro/2020/commuting-flows-2020/table1.xlsx">US Census, county-to-county commuting flows, ACS 2016 to 2020</a>.</li>
+    <li>Downtown recovery context: Chapple et al., School of Cities, <a href="https://downtownrecovery.com/death_of_downtown_policy_brief.pdf">The death of downtown? (2023)</a>: downtowns with diverse uses recovered best, office-only downtowns worst.</li>
+  </ol>
+</section>
+</div>
+
+<script>
+(function(){
+  var cv=document.getElementById('simCanvas'); if(!cv||!cv.getContext) return;
+  var ctx=cv.getContext('2d'), W=1100, H=560, dpr=Math.min(window.devicePixelRatio||1,2);
+  cv.width=W*dpr; cv.height=H*dpr; ctx.scale(dpr,dpr);
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var css=function(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim();};
+  var col={};
+  function readColors(){col={paper:css('--paper'),block:css('--house'),street:css('--street'),walk:css('--walk'),road:css('--road'),ink:css('--ink'),ink2:css('--ink-2'),person:css('--person'),bus:css('--bus'),shirts:[css('--person'),css('--shirt-1'),css('--shirt-2'),css('--shirt-3')],thru:css('--chart-b'),dest:css('--chart-a')};if(reduce&&window.__simDraw)window.__simDraw();}
+  readColors();
+  if(window.matchMedia){window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',readColors);}
+  new MutationObserver(readColors).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+
+  // geometry: every x in SX and y in SY is a street centre line; R is the ring road
+  var R={x:150,y:90,w:800,h:380};
+  var VX=[250,350,450,550,650,750,850], HY=[185,280,375];
+  var SX=[R.x].concat(VX,[R.x+R.w]), SY=[R.y].concat(HY,[R.y+R.h]);
+  var AV=[185,375]; // avenues that run out to the canvas edges
+  var BX=500, BY=232; // cell lines in the plan scene (mid-block)
+  var FILTERS=HY.map(function(y){return [BX,y,'h'];}).concat(VX.map(function(x){return [x,BY,'v'];}));
+  var HALF=12, LANE=5.5, PARK=7.2, SW=15.5; // street half-width, driving lane, parking lane, sidewalk centre
+  // plan scene: street segments next to the filters that no car needs any more become plazas
+  var PLAZA=[], TABLES=[];
+  VX.forEach(function(x,i){ if(x===550) return; PLAZA.push([x-HALF,R.y+95+HALF,2*HALF,95-2*HALF]); TABLES.push([x+(i%2?6:-6), i%2?254:210]); });
+  [280].forEach(function(y,i){ PLAZA.push([450+HALF,y-HALF,100-2*HALF,2*HALF]); TABLES.push([478,y+(i?6:-6)]); TABLES.push([522,y+(i?-6:6)]); });
+  var GROUPS=[]; VX.forEach(function(x,i){ if(x===550) return; GROUPS.push([x+(i%2?-3:3), i%2?210:254]); });
+  var mode='today', auto=!reduce, lastSwitch=0, seatA=0;
+
+  function rnd(a,b){return a+Math.random()*(b-a);}
+  function pick(a){return a[Math.floor(Math.random()*a.length)];}
+  function pathLen(p){var L=0;for(var i=1;i<p.length;i++)L+=Math.hypot(p[i][0]-p[i-1][0],p[i][1]-p[i-1][1]);return L;}
+  function posAt(p,d){for(var i=1;i<p.length;i++){var seg=Math.hypot(p[i][0]-p[i-1][0],p[i][1]-p[i-1][1]);if(d<=seg){var t=seg?d/seg:0;return [p[i-1][0]+(p[i][0]-p[i-1][0])*t,p[i-1][1]+(p[i][1]-p[i-1][1])*t,(p[i][0]-p[i-1][0])/(seg||1),(p[i][1]-p[i-1][1])/(seg||1)];}d-=seg;}var q=p[p.length-1],r=p[p.length-2]||q;var sg=Math.hypot(q[0]-r[0],q[1]-r[1])||1;return [q[0],q[1],(q[0]-r[0])/sg,(q[1]-r[1])/sg];}
+  function turnTo(a,b,k){var d=Math.atan2(Math.sin(b-a),Math.cos(b-a));return a+d*Math.min(1,k);}
+  function clamp01(v){return v<0?0:v>1?1:v;}
+
+  function throughPath(){
+    var horiz=Math.random()<0.7, dir=Math.random()<0.5?1:-1;
+    if(horiz){
+      var y=pick(AV), x0=dir>0?-30:W+30, x1=dir>0?W+30:-30;
+      if(mode==='today') return [[x0,y],[x1,y]];
+      var edgeY=(y===185)?R.y:R.y+R.h, xa=dir>0?R.x:R.x+R.w, xb=dir>0?R.x+R.w:R.x;
+      return [[x0,y],[xa,y],[xa,edgeY],[xb,edgeY],[xb,y],[x1,y]];
+    } else {
+      var x=550, y0=dir>0?-30:H+30, y1=dir>0?H+30:-30;
+      if(mode==='today') return [[x,y0],[x,y1]];
+      var edgeX=Math.random()<0.5?R.x:R.x+R.w, ya=dir>0?R.y:R.y+R.h, yb=dir>0?R.y+R.h:R.y;
+      return [[x,y0],[x,ya],[edgeX,ya],[edgeX,yb],[x,yb],[x,y1]];
+    }
+  }
+  function nearFilter(x,y){return mode==='plan'&&FILTERS.some(function(f){return Math.hypot(f[0]-x,f[1]-y)<32;});}
+  function destPath(){
+    for(var tries=0;tries<30;tries++){
+      var xi=pick(VX), av, fromLeft;
+      if(mode==='plan'){ fromLeft=xi<BX; av=Math.random()<0.4?185:375; } else { av=pick(AV); fromLeft=Math.random()<0.5; }
+      var p=[[fromLeft?-30:W+30,av],[xi,av]];
+      if((mode!=='plan'||av===375)&&(xi===550||Math.random()<0.5)){ var o=pick([-40,40]); if(nearFilter(xi+o,280)) o=-o; p.push([xi,280]); p.push([xi+o,280]); return p; }
+      if(xi===550) continue;
+      var oy=pick([-40,40]); if(nearFilter(xi,av+oy)) oy=-oy; if(nearFilter(xi,av+oy)) continue;
+      p.push([xi,av+oy]); return p;
+    }
+    return [[-30,375],[250,375],[250,415]];
+  }
+  // bus routes: two crosstown avenues and one north-south street, both directions, with mid-block stops
+  var ROUTES=[
+    {p:[[-50,185],[W+50,185]],at:[300,700]},{p:[[W+50,185],[-50,185]],at:[800,400]},
+    {p:[[-50,375],[W+50,375]],at:[400,800]},{p:[[W+50,375],[-50,375]],at:[700,300]},
+    {p:[[550,-50],[550,H+50]],at:[137,327]},{p:[[550,H+50],[550,-50]],at:[327,137]}];
+  var SHELTERS=[];
+  ROUTES.forEach(function(r){var a=r.p[0],b=r.p[1],L=Math.hypot(b[0]-a[0],b[1]-a[1]),ux=(b[0]-a[0])/L,uy=(b[1]-a[1])/L,h=a[1]===b[1];
+    r.L=L; r.stops=r.at.map(function(v){var d=Math.abs(v-(h?a[0]:a[1]));var sx=a[0]+ux*d,sy=a[1]+uy*d;var sh={x:sx-uy*SW,y:sy+ux*SW,ux:ux,uy:uy,busy:false};SHELTERS.push(sh);return {d:d,sh:sh};});});
+  function bikePath(){
+    var dir=Math.random()<0.5?1:-1;
+    if(Math.random()<0.55){var y=pick(HY);return dir>0?[[-20,y],[W+20,y]]:[[W+20,y],[-20,y]];}
+    var x=pick(VX);return dir>0?[[x,-20],[x,H+20]]:[[x,H+20],[x,-20]];
+  }
+  function initAng(p){return Math.atan2(p[1][1]-p[0][1],p[1][0]-p[0][0]);}
+
+  var cars=[], buses=[], bikes=[], peds=[];
+  function spawnThrough(pr){var p=throughPath(),L=pathLen(p);var c={kind:'thru',p:p,L:L,d:(pr==null?0:pr)*L,v:rnd(200,250)};c.ang=Math.atan2(posAt(p,c.d)[3],posAt(p,c.d)[2]);return c;}
+  function spawnDest(pr){var p=destPath(),L=pathLen(p);var c={kind:'dest',p:p,L:L,d:(pr==null?0:pr)*L,v:rnd(42,58),state:'in',stay:rnd(7,11),t:0,w:rnd(-14,14)};c.ang=Math.atan2(posAt(p,c.d)[3],posAt(p,c.d)[2]);if(pr!=null&&Math.random()<0.5){c.state='stay';c.d=L;c.t=rnd(0,c.stay);var e=posAt(p,L);c.ang=Math.atan2(e[3],e[2]);}return c;}
+  function spawnBus(pr){var r=pick(ROUTES),d=(pr==null?0:pr)*r.L,ni=0;while(ni<r.stops.length&&r.stops[ni].d<=d)ni++;return {p:r.p,L:r.L,d:d,v:rnd(50,62),ang:initAng(r.p),r:r,ni:ni,pause:0};}
+  function spawnBike(pr){var p=bikePath(),L=pathLen(p);return {p:p,L:L,d:(pr==null?0:pr)*L,v:rnd(38,52),ang:initAng(p)};}
+  // sidewalk lattice: people walk along sidewalk lines and cross the streets at the corners
+  var SWX=[],SWY=[];
+  SX.forEach(function(x){if(x>R.x)SWX.push(x-SW);if(x<R.x+R.w)SWX.push(x+SW);});
+  SY.forEach(function(y){if(y>R.y)SWY.push(y-SW);if(y<R.y+R.h)SWY.push(y+SW);});
+  var XMIN=R.x+SW,XMAX=R.x+R.w-SW,YMIN=R.y+SW,YMAX=R.y+R.h-SW;
+  function spawnPed(){var h=Math.random()<0.6;var q={h:h,dir:Math.random()<0.5?1:-1,v:rnd(5.5,9),ph:rnd(0,6.3),s:rnd(0.88,1.1),a:0,pause:0,c:Math.floor(Math.random()*4),pair:Math.random()<0.38};
+    if(h){q.y=pick(SWY);q.x=rnd(XMIN,XMAX);}else{q.x=pick(SWX);q.y=rnd(YMIN,YMAX);}return q;}
+  function stepPed(q,dt){
+    if(q.pause>0){q.pause-=dt;return false;}
+    if(Math.random()<dt*0.06){q.pause=rnd(1,3);return false;}
+    var st=q.v*dt*q.dir, lo=q.h?XMIN:YMIN, hi=q.h?XMAX:YMAX, cur=q.h?q.x:q.y, nx=cur+st, lines=q.h?SWX:SWY, turned=false;
+    for(var i=0;i<lines.length;i++){var s=lines[i];if(((cur-s)*(nx-s)<0||nx===s)&&Math.random()<0.28){nx=s;turned=true;break;}}
+    if(nx<lo){nx=lo;turned=true;} if(nx>hi){nx=hi;turned=true;}
+    if(q.h)q.x=nx;else q.y=nx;
+    if(turned){q.h=!q.h;var c2=q.h?q.x:q.y,l2=q.h?XMIN:YMIN,h2=q.h?XMAX:YMAX;q.dir=c2<=l2+1?1:c2>=h2-1?-1:(Math.random()<0.5?1:-1);}
+    q.ph+=dt*q.v*0.9; return true;
+  }
+  var N_THRU=34, N_DEST=26;
+  function pedTarget(){return mode==='today'?16:64;}
+  function bikeTarget(){return mode==='today'?8:24;}
+  function busTarget(){return mode==='today'?4:6;}
+  function reseed(){cars=[];for(var i=0;i<N_THRU;i++)cars.push(spawnThrough(Math.random()));for(var j=0;j<N_DEST;j++)cars.push(spawnDest(Math.random()));buses=[];for(var u=0;u<busTarget();u++)buses.push(spawnBus(Math.random()));}
+  reseed(); for(var k=0;k<pedTarget();k++){var q0=spawnPed();q0.a=1;peds.push(q0);} for(var b0=0;b0<bikeTarget();b0++)bikes.push(spawnBike(Math.random()));
+
+  function setMode(m,fromUser){
+    if(fromUser) auto=false;
+    if(m===mode&&!fromUser) return;
+    mode=m; lastSwitch=performance.now();
+    cars=cars.map(function(c){return c.kind==='thru'?spawnThrough(Math.random()):c;});
+    document.getElementById('btnToday').setAttribute('aria-pressed',m==='today');
+    document.getElementById('btnPlan').setAttribute('aria-pressed',m==='plan');
+    document.getElementById('simTitle').innerHTML=m==='today'?'Today <span>· 4 in 10 cars on downtown streets are passing through</span>':'With the plan <span>· filters split downtown into cells; every address is reachable from the ring, nothing can cut across</span>';
+  }
+  document.getElementById('btnToday').addEventListener('click',function(){setMode('today',true);});
+  document.getElementById('btnPlan').addEventListener('click',function(){setMode('plan',true);});
+
+  function drawBlock(x,y,w,h){ctx.fillStyle=col.walk;ctx.beginPath();ctx.roundRect(x,y,w,h,5);ctx.fill();ctx.fillStyle=col.block;ctx.beginPath();ctx.roundRect(x+7,y+7,w-14,h-14,3);ctx.fill();}
+  function drawMap(){
+    ctx.fillStyle=col.street; ctx.fillRect(0,0,W,H);
+    // outside blocks (context), faded
+    ctx.globalAlpha=.5;
+    for(var a=-3;a<12;a++)for(var b=-2;b<7;b++){var bx=R.x+a*100,by=R.y+b*95;if(bx>=R.x-1&&bx<R.x+R.w&&by>=R.y-1&&by<R.y+R.h)continue;drawBlock(bx+HALF,by+HALF,100-2*HALF,95-2*HALF);}
+    ctx.globalAlpha=1;
+    for(var i=0;i<SX.length-1;i++)for(var j=0;j<SY.length-1;j++)drawBlock(SX[i]+HALF,SY[j]+HALF,SX[i+1]-SX[i]-2*HALF,SY[j+1]-SY[j]-2*HALF);
+    // the roads that carry the through traffic in each scene
+    ctx.strokeStyle=col.road; ctx.lineWidth=2*HALF; ctx.globalAlpha=.3; ctx.beginPath();
+    if(mode==='today'){AV.forEach(function(y){ctx.moveTo(0,y);ctx.lineTo(W,y);});ctx.moveTo(550,0);ctx.lineTo(550,H);}
+    else{ctx.rect(R.x,R.y,R.w,R.h);}
+    ctx.stroke(); ctx.globalAlpha=1;
+    // centre-line dashes on those roads
+    ctx.strokeStyle=col.thru; ctx.lineWidth=1.6; ctx.setLineDash([7,9]); ctx.globalAlpha=.7; ctx.beginPath();
+    if(mode==='today'){AV.forEach(function(y){ctx.moveTo(0,y);ctx.lineTo(W,y);});ctx.moveTo(550,0);ctx.lineTo(550,H);}
+    else{ctx.rect(R.x,R.y,R.w,R.h);}
+    ctx.stroke(); ctx.setLineDash([]); ctx.globalAlpha=1;
+    // plazas and cafe tables on the freed street space
+    if(seatA>0.01){
+      ctx.globalAlpha=seatA; ctx.fillStyle=col.walk; PLAZA.forEach(function(r){ctx.fillRect(r[0],r[1],r[2],r[3]);}); ctx.globalAlpha=1;
+    }
+    if(mode==='plan'){
+      ctx.strokeStyle=col.dest;ctx.globalAlpha=.3;ctx.lineWidth=3;ctx.setLineDash([10,8]);ctx.beginPath();ctx.moveTo(BX,R.y);ctx.lineTo(BX,R.y+R.h);ctx.moveTo(R.x,BY);ctx.lineTo(R.x+R.w,BY);ctx.stroke();ctx.setLineDash([]);ctx.globalAlpha=1;
+      FILTERS.forEach(function(f){var x=f[0],y=f[1],h=f[2]==='h';
+        ctx.fillStyle=col.dest;ctx.globalAlpha=.3;ctx.beginPath();ctx.arc(x,y,19,0,Math.PI*2);ctx.fill();ctx.globalAlpha=1;
+        ctx.fillStyle=col.ink;for(var k=-1;k<=1;k++){ctx.beginPath();ctx.arc(h?x:x+k*8,h?y+k*8:y,3.4,0,Math.PI*2);ctx.fill();}
+      });
+    }
+  }
+  function drawCar(x,y,ang,c,alpha,moving){
+    ctx.save();ctx.translate(x,y);ctx.rotate(ang);ctx.globalAlpha=alpha;
+    if(moving){ctx.strokeStyle=c;ctx.globalAlpha=alpha*.25;ctx.lineWidth=6;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(-11,0);ctx.lineTo(-11-moving,0);ctx.stroke();ctx.globalAlpha=alpha;}
+    ctx.fillStyle=c;ctx.beginPath();ctx.roundRect(-9,-4.6,18,9.2,3);ctx.fill();
+    ctx.strokeStyle=col.ink;ctx.globalAlpha=alpha*.35;ctx.lineWidth=1;ctx.stroke();
+    ctx.fillStyle=col.paper;ctx.globalAlpha=alpha*.85;ctx.beginPath();ctx.roundRect(2.2,-3.5,3.4,7,1.2);ctx.fill();
+    ctx.globalAlpha=alpha*.65;ctx.beginPath();ctx.roundRect(-7,-3.2,2.4,6.4,1);ctx.fill();
+    ctx.restore();
+  }
+  function drawBus(x,y,ang){
+    ctx.save();ctx.translate(x,y);ctx.rotate(ang);
+    ctx.fillStyle=col.bus;ctx.beginPath();ctx.roundRect(-23,-6.2,46,12.4,3);ctx.fill();
+    ctx.strokeStyle=col.ink;ctx.globalAlpha=.35;ctx.lineWidth=1;ctx.stroke();
+    ctx.fillStyle=col.paper;ctx.globalAlpha=.9;ctx.beginPath();ctx.roundRect(17.5,-4.8,3.4,9.6,1.2);ctx.fill();
+    ctx.globalAlpha=.4;ctx.beginPath();ctx.roundRect(-18,-3.2,12,6.4,1.5);ctx.roundRect(-3,-3.2,12,6.4,1.5);ctx.fill();
+    ctx.restore();
+  }
+  function drawShelter(sh){
+    ctx.save();ctx.translate(sh.x,sh.y);ctx.rotate(Math.atan2(sh.uy,sh.ux));
+    ctx.fillStyle=col.bus;ctx.beginPath();ctx.roundRect(-9,1.5,18,3.6,1.5);ctx.fill();
+    ctx.fillStyle=col.ink;ctx.beginPath();ctx.arc(11,3.3,1.9,0,Math.PI*2);ctx.fill();
+    ctx.restore();
+  }
+  function drawBike(x,y,ang){
+    ctx.save();ctx.translate(x,y);ctx.rotate(ang);ctx.lineCap='round';
+    ctx.strokeStyle=col.ink;ctx.lineWidth=2.4;ctx.beginPath();ctx.moveTo(-9,0);ctx.lineTo(9,0);ctx.moveTo(5.5,-4);ctx.lineTo(5.5,4);ctx.stroke();
+    ctx.fillStyle=col.ink;ctx.beginPath();ctx.ellipse(-9,0,2.8,1.6,0,0,Math.PI*2);ctx.ellipse(9,0,2.8,1.6,0,0,Math.PI*2);ctx.fill();
+    ctx.strokeStyle=col.dest;ctx.lineWidth=3.6;ctx.beginPath();ctx.moveTo(-1.5,-5.6);ctx.lineTo(-1.5,5.6);ctx.stroke();
+    ctx.fillStyle=col.ink;ctx.beginPath();ctx.arc(0.2,0,3.3,0,Math.PI*2);ctx.fill();
+    ctx.restore();
+  }
+  // an upright figure standing at (x,y); body colour c; ph drives the walk cycle
+  // an upright figure standing at (x,y); ph drives the walk cycle; c = torso colour (null = by scene)
+  // seatA doubles as the mood: 0 = today (grey, head down), 1 = with the plan (upright, colourful)
+  function drawPerson(x,y,s,ph,walking,alpha,c,lean,wave){
+    var slump=1-seatA, lx=(lean||0)*slump;
+    var bob=walking?Math.abs(Math.sin(ph))*(0.5+0.8*seatA):0, sw=walking?Math.sin(ph)*2.6:1.3;
+    var skin=seatA>0.5?col.person:col.ink2, shirt=c||(seatA>0.5?col.shirts[0]:col.ink2);
+    ctx.globalAlpha=alpha*.18;ctx.fillStyle=col.ink;ctx.beginPath();ctx.ellipse(x,y+0.5,4*s,1.5*s,0,0,Math.PI*2);ctx.fill();
+    ctx.globalAlpha=alpha;ctx.lineCap='round';ctx.strokeStyle=skin;ctx.lineWidth=2.3*s;
+    ctx.beginPath();ctx.moveTo(x,y-6*s-bob);ctx.lineTo(x-sw*s,y);ctx.moveTo(x,y-6*s-bob);ctx.lineTo(x+sw*s,y);ctx.stroke();
+    if(wave){ctx.lineWidth=2*s;ctx.beginPath();ctx.moveTo(x+1.5*s,y-11.5*s);ctx.lineTo(x+5*s,y-17*s);ctx.stroke();}
+    ctx.strokeStyle=shirt;ctx.lineWidth=5.2*s;ctx.beginPath();ctx.moveTo(x+lx*1.3*s,y-(12.5-2*slump)*s-bob);ctx.lineTo(x,y-6.5*s-bob);ctx.stroke();
+    ctx.fillStyle=skin;ctx.beginPath();ctx.arc(x+lx*2.4*s,y-(17-3.2*slump)*s-bob,3.1*s,0,Math.PI*2);ctx.fill();
+    ctx.globalAlpha=1;
+  }
+  function drawSeated(x,y,face,alpha,t,shirt){
+    var nod=Math.sin(t)*0.5;
+    ctx.globalAlpha=alpha;ctx.lineCap='round';ctx.strokeStyle=col.person;ctx.lineWidth=2.3;
+    ctx.beginPath();ctx.moveTo(x,y-2);ctx.lineTo(x+face*4.5,y-1.5);ctx.lineTo(x+face*4.5,y+2.5);ctx.stroke();
+    ctx.strokeStyle=shirt||col.person;ctx.lineWidth=5.2;ctx.beginPath();ctx.moveTo(x,y-8);ctx.lineTo(x,y-2.5);ctx.stroke();
+    ctx.fillStyle=col.person;ctx.beginPath();ctx.arc(x+nod,y-12.5,3.1,0,Math.PI*2);ctx.fill();
+    ctx.globalAlpha=1;
+  }
+  function drawTable(x,y,alpha,t){
+    ctx.globalAlpha=alpha;ctx.fillStyle=col.block;ctx.strokeStyle=col.ink2;ctx.lineWidth=1.3;ctx.beginPath();ctx.arc(x,y,4.2,0,Math.PI*2);ctx.fill();ctx.stroke();ctx.globalAlpha=1;
+    var k=Math.round(t*0)+Math.round((x+y)/7);drawSeated(x-8,y+1,1,alpha,t,col.shirts[(k+1)%4]);drawSeated(x+8,y+1,-1,alpha,t+2,col.shirts[(k+3)%4]);
+  }
+  // where the driver of a parked car is, t seconds after parking
+  function driverAt(c){
+    var e=posAt(c.p,c.L), ux=e[2], uy=e[3], nx=-uy, ny=ux, v=8;
+    var D=[e[0]+nx*(PARK+4),e[1]+ny*(PARK+4)], S1=[e[0]+nx*SW,e[1]+ny*SW], S2=[S1[0]+ux*c.w,S1[1]+uy*c.w];
+    var l1=Math.hypot(S1[0]-D[0],S1[1]-D[1])/v, l2=Math.abs(c.w)/v, t=c.t, T=c.stay;
+    var tOut=0.5, tBack=T-0.4-l1-l2;
+    function lerp(A,B,f){return [A[0]+(B[0]-A[0])*f,A[1]+(B[1]-A[1])*f];}
+    if(t<tOut||t>T-0.4) return null;
+    if(t<tOut+l1) return lerp(D,S1,(t-tOut)/l1).concat(1);
+    if(t<tOut+l1+l2) return lerp(S1,S2,(t-tOut-l1)/l2).concat(1);
+    if(t<tBack) return S2.concat(0);
+    if(t<tBack+l2) return lerp(S2,S1,(t-tBack)/l2).concat(1);
+    return lerp(S1,D,clamp01((t-tBack-l2)/l1)).concat(1);
+  }
+  function moveAlong(o,dt,off){
+    var P=posAt(o.p,o.d), x=P[0]-P[3]*off, y=P[1]+P[2]*off;
+    if(o.x!=null){var mx=x-o.x,my=y-o.y;if(Math.hypot(mx,my)>0.02)o.ang=turnTo(o.ang,Math.atan2(my,mx),dt*9);}
+    o.x=x;o.y=y;return P;
+  }
+
+  var last=performance.now(), lastCount=0;
+  function frame(now){
+    var dt=Math.min(0.05,(now-last)/1000); last=now;
+    if(auto&&now-lastSwitch>9000) setMode(mode==='today'?'plan':'today',false);
+    seatA=reduce?(mode==='plan'?1:0):seatA+((mode==='plan'?1:0)-seatA)*Math.min(1,dt*1.5);
+    drawMap();
+    var onFoot=0, crossing=0;
+    if(seatA>0.01){TABLES.forEach(function(tb,i){drawTable(tb[0],tb[1],seatA,now/900+i);});if(seatA>0.5)onFoot+=TABLES.length*2;}
+    // people on the sidewalks
+    var target=pedTarget();
+    while(peds.length<target){var np=spawnPed();if(reduce)np.a=1;peds.push(np);}
+    for(var i=peds.length-1;i>=0;i--){var q=peds[i];var want=i<target?1:0;q.a=reduce?want:q.a+(want-q.a)*Math.min(1,dt*1.5);if(want===0&&q.a<0.03){peds.splice(i,1);continue;}
+      var walking=stepPed(q,dt), sc=seatA>0.5?col.shirts[q.c]:null, ln=q.h?q.dir:0;
+      if(q.pair&&seatA>0.5){var px=q.h?q.x-1.5*q.dir:q.x+5, py=q.h?q.y+4:q.y+1;drawPerson(q.x,q.y,q.s,q.ph,walking,q.a,sc,ln);drawPerson(px,py,q.s*0.96,q.ph+1.6,walking,q.a,col.shirts[(q.c+2)%4],ln);if(q.a>0.5)onFoot+=2;}
+      else{drawPerson(q.x,q.y,q.s,q.ph,walking,q.a,sc,ln);if(q.a>0.5)onFoot++;}}
+    // groups chatting on the plazas
+    if(seatA>0.01){GROUPS.forEach(function(g,i){var t=now/700+i*1.7;
+      drawPerson(g[0]-6,g[1],0.95,0,false,seatA,col.shirts[(i+1)%4],0,Math.sin(t)>0.75);
+      drawPerson(g[0]+6,g[1],1.02,0,false,seatA,col.shirts[(i+2)%4],0,false);
+      drawPerson(g[0],g[1]+5,0.98,0,false,seatA,col.shirts[(i+3)%4],0,Math.sin(t+2.5)>0.8);});
+      if(seatA>0.5)onFoot+=GROUPS.length*3;}
+    // bus stops and the people waiting at them
+    SHELTERS.forEach(function(sh,i){drawShelter(sh);if(!sh.busy){drawPerson(sh.x-sh.ux*5,sh.y-sh.uy*5,0.95,0,false,1,null);onFoot++;}});
+    // bikes
+    var bt=bikeTarget(); while(bikes.length<bt)bikes.push(spawnBike(reduce?Math.random():0));
+    for(var bi=bikes.length-1;bi>=0;bi--){var bk=bikes[bi];bk.d+=bk.v*dt;if(bk.d>=bk.L){if(bikes.length>bt){bikes.splice(bi,1);continue;}bikes[bi]=bk=spawnBike(0);}moveAlong(bk,dt,3);drawBike(bk.x,bk.y,bk.ang);}
+    // cars: parked ones and their drivers first, moving ones on top
+    for(var k=0;k<cars.length;k++){var c=cars[k];if(c.kind!=='dest'||c.state!=='stay')continue;
+      c.t+=dt; var e=posAt(c.p,c.L); drawCar(e[0]-e[3]*PARK,e[1]+e[2]*PARK,c.ang,col.dest,.6,false);
+      var dr=driverAt(c); if(dr){drawPerson(dr[0],dr[1],1,now/110+k,dr[2]===1,1,col.dest);onFoot++;}
+      if(c.t>c.stay){c.state='out';c.d=c.L;}}
+    for(var m=0;m<cars.length;m++){var cc=cars[m];
+      if(cc.kind==='thru'){cc.d+=cc.v*dt;if(cc.d>=cc.L){cars[m]=spawnThrough(0);continue;}moveAlong(cc,dt,LANE);drawCar(cc.x,cc.y,cc.ang,col.thru,1,26);
+        if(cc.x>R.x+HALF+4&&cc.x<R.x+R.w-HALF-4&&cc.y>R.y+HALF+4&&cc.y<R.y+R.h-HALF-4)crossing++;}
+      else if(cc.state==='in'){cc.d+=cc.v*dt;if(cc.d>=cc.L){cc.d=cc.L;cc.state='stay';cc.t=0;}var off=LANE+(PARK-LANE)*clamp01(1-(cc.L-cc.d)/20);moveAlong(cc,dt,off);drawCar(cc.x,cc.y,cc.ang,col.dest,1,5);}
+      else if(cc.state==='out'){cc.d-=cc.v*dt;if(cc.d<=0){cars[m]=spawnDest(0);continue;}var off2=PARK+(-LANE-PARK)*clamp01((cc.L-cc.d)/30);moveAlong(cc,dt,off2);drawCar(cc.x,cc.y,cc.ang,col.dest,1,5);}
+    }
+    var bst=busTarget(); while(buses.length<bst)buses.push(spawnBus(reduce?Math.random():0));
+    for(var u=buses.length-1;u>=0;u--){var bs=buses[u];
+      if(bs.pause>0){bs.pause-=dt;if(bs.pause<=0)bs.stop.sh.busy=false;}
+      else{bs.d+=bs.v*dt;if(bs.ni<bs.r.stops.length&&bs.d>=bs.r.stops[bs.ni].d){bs.stop=bs.r.stops[bs.ni];bs.d=bs.stop.d;bs.ni++;bs.pause=2.6;bs.stop.sh.busy=true;}
+        if(bs.d>=bs.L){if(buses.length>bst){buses.splice(u,1);continue;}buses[u]=bs=spawnBus(0);}}
+      moveAlong(bs,dt,LANE);drawBus(bs.x,bs.y,bs.ang);
+      if(bs.pause>0){var sh=bs.stop.sh,f=1-bs.pause/2.6,Dx=bs.x-sh.uy*7,Dy=bs.y+sh.ux*7;
+        var g1=clamp01(f*1.7), g2=clamp01((f-0.35)*1.9);
+        drawPerson(Dx+(sh.x+sh.ux*12-Dx)*g1,Dy+(sh.y+sh.uy*12-Dy)*g1,1,now/110,g1<1,1,null);onFoot++;
+        if(g2<1){drawPerson(sh.x-sh.ux*5+(Dx-sh.x+sh.ux*5)*g2,sh.y-sh.uy*5+(Dy-sh.y+sh.uy*5)*g2,0.95,now/110+2,g2>0,1,null);onFoot++;}}
+    }
+    if(reduce||now-lastCount>400){lastCount=now;document.getElementById('cntThru').textContent=crossing;document.getElementById('cntPpl').textContent=onFoot;}
+    if(!reduce) requestAnimationFrame(frame);
+  }
+  window.__simDraw=function(){frame(performance.now());};
+  if(reduce){ frame(performance.now()); document.getElementById('btnToday').addEventListener('click',window.__simDraw); document.getElementById('btnPlan').addEventListener('click',window.__simDraw); }
+  else requestAnimationFrame(frame);
+})();
+</script>
+
+</body></html>
